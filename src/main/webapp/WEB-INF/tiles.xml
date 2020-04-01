@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="template-def" template="/WEB-INF/jsp/layouts/template.jsp">
+  	<put-attribute name="title" value=""/>
+    <put-attribute name="sidebar" value="/WEB-INF/jsp/layouts/sidebar.jsp" />
+    <put-attribute name="topnav" value="/WEB-INF/jsp/layouts/topnav.jsp" />
+    <put-attribute name="content" value=""/>
+    <put-attribute name="footer" value="/WEB-INF/jsp/layouts/footer.jsp" />
+  </definition>
+  
+  <!-- Login -->
+  <definition name="login-def">
+  	<put-attribute name="content" value="/WEB-INF/jsp/login.jsp"/>
+  </definition>
+  
+  <!-- Dashboard -->
+  <definition name="dashboard-def" extends="template-def">
+  	<put-attribute name="title" value="Dashboard"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/dashboard/dashboard.jsp"/>
+  </definition>
+  
+  <!-- Karyawan -->
+  <definition name="karyawan-def" extends="template-def">
+  	<put-attribute name="title" value="Karyawan"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/karyawan/MstKaryawanList.jsp"/>
+  </definition>
+  
+  <definition name="karyawanAdd-def" extends="template-def">
+  	<put-attribute name="title" value="Karyawan | Add"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/karyawan/MstKaryawanAdd.jsp"/>
+  </definition>
+  
+  <definition name="karyawanEdit-def" extends="template-def">
+  	<put-attribute name="title" value="Karyawan | Edit"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/karyawan/MstKaryawanEdit.jsp"/>
+  </definition>
+  
+  <!-- Provinsi -->
+  <definition name="provinsi-def" extends="template-def">
+  	<put-attribute name="title" value="Provinsi"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/provinsi/MstProvinsiList.jsp"/>
+  </definition>
+  
+  <definition name="provinsiAdd-def" extends="template-def">
+  	<put-attribute name="title" value="Provinsi | Add"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/provinsi/MstProvinsiAdd.jsp"/>
+  </definition>
+  
+  <definition name="provinsiEdit-def" extends="template-def">
+  	<put-attribute name="title" value="Provinsi | Edit"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/provinsi/MstProvinsiEdit.jsp"/>
+  </definition>
+  
+  <!-- Barang -->
+  <definition name="barang-def" extends="template-def">
+  	<put-attribute name="title" value="Barang"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/barang/MstBarangList.jsp"/>
+  </definition>
+  
+  <definition name="barangAdd-def" extends="template-def">
+  	<put-attribute name="title" value="Barang | Add"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/barang/MstBarangAdd.jsp"/>
+  </definition>
+  
+  <definition name="barangEdit-def" extends="template-def">
+  	<put-attribute name="title" value="Barang | Edit"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/barang/MstBarangEdit.jsp"/>
+  </definition>
+  
+  <!-- Kota -->
+  <definition name="kota-def" extends="template-def">
+  	<put-attribute name="title" value="Kota"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/kota/MstKotaList.jsp"/>
+  </definition>
+  
+  <definition name="kotaAdd-def" extends="template-def">
+  	<put-attribute name="title" value="Kota | Add"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/kota/MstKotaAdd.jsp"/>
+  </definition>
+  
+  <definition name="kotaEdit-def" extends="template-def">
+  	<put-attribute name="title" value="Kota | Edit"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/kota/MstKotaEdit.jsp"/>
+  </definition>
+  
+  <!-- Customer -->
+  <definition name="customer-def" extends="template-def">
+  	<put-attribute name="title" value="Customer"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/customer/MstCustomerList.jsp"/>
+  </definition>
+  
+  <definition name="customerAdd-def" extends="template-def">
+  	<put-attribute name="title" value="Customer | Add"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/customer/MstCustomerAdd.jsp"/>
+  </definition>
+  
+  <definition name="customerEdit-def" extends="template-def">
+  	<put-attribute name="title" value="Customer | Edit"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/customer/MstCustomerEdit.jsp"/>
+  </definition>
+  
+  <!-- Supplier -->
+  <definition name="supplier-def" extends="template-def">
+  	<put-attribute name="title" value="Supplier"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/supplier/MstSupplierList.jsp"/>
+  </definition>
+  
+  <definition name="supplierAdd-def" extends="template-def">
+  	<put-attribute name="title" value="Supplier | Add"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/supplier/MstSupplierAdd.jsp"/>
+  </definition>
+  
+  <definition name="supplierEdit-def" extends="template-def">
+  	<put-attribute name="title" value="Supplier | Edit"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/supplier/MstSupplierEdit.jsp"/>
+  </definition>
+  
+  <!-- Penjualan -->
+  <definition name="penjualan-def" extends="template-def">
+  	<put-attribute name="title" value="Penjualan"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/penjualan/TrPenjualanList.jsp"/>
+  </definition>
+  
+  <definition name="penjualanAdd-def" extends="template-def">
+  	<put-attribute name="title" value="Penjualan | Add"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/penjualan/TrPenjualanAdd.jsp"/>
+  </definition>
+  
+  <definition name="penjualanEdit-def" extends="template-def">
+  	<put-attribute name="title" value="Penjualan | Edit"/>
+  	<put-attribute name="content" value="/WEB-INF/jsp/contents/penjualan/TrPenjualanEdit.jsp"/>
+  </definition>
+</tiles-definitions>
